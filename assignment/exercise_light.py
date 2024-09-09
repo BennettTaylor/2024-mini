@@ -14,8 +14,8 @@ adc = machine.ADC(ADC2)
 
 blink_period = 0.1
 
-max_bright = 20000
-min_bright = 10000
+max_bright = 53500
+min_bright = 420
 
 
 def clip(value: float) -> float:
