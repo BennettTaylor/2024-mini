@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "mini-bennett-ella",
+  "private_key_id": "882dbbe200889e7206f9b40dcfc8d9d28000b5a2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1xv6m0Q2a3smQ\nuSkgEdXVUGnc0K7qV+i5JdHPVjG0MF1REgQ7oWfA08+/rPu+D5PJbUCxtpZScfMH\nIVAnM4OcEms4YRhLVcdJg5KNYbiMPAcedDxNS9NvCi+BNG29VF4VcTz9UuzT/9sB\nFRvst+tAEch8zlWrjhOCfmmrb5X6m6XLLM/r3JXfJuOiL0cj6EF9qF+b3HlU2KXd\nnV5qC3G3IU0BDNeU07HySxpZXQEdzoXNmd0pp5BYr9jeOtDZCh3EgP50VK87FJeS\nkNd0bsMQkhFG/pYGAq9844VMZc5KXFxQYjcnbmC9WpS4bFIpq0+jEVQfG6XdaqGk\ncUlDVyolAgMBAAECggEAANX2ux2gSmNWhJaABz24a1AArJs+XVAk1HUaudv+Q9h/\nwAJX3U5TWSJK2j7ECY5Yx5xQ/Srca2n1YXBYcKsJTTZod8yP0rOE7w7ueufwHp+d\nXhklYyruFfHzYKIKacxxgk0QUrncN5KoQcuvDS+V9/1yRotMVDWbBrE+GyOwNNlw\nXdTcgPAhHvIvZB/4suoroVjtKfBwYtQACelRlvmAP+4V9Ihg+vRyE4iplw8PVVtf\nXqtev6cc1Qdxa5W5Hgp08Rp42SdDVzDzyzdH7cmpAcsic2S1s/K9MsyjzHyHSjF5\nqWgzoY5mne5ME/mHGE0NhQ0Rpk4ZFgSCwSoRfjSyIQKBgQDvLo2+5jqhzAwsBvOf\njesSSxymYIY1Ug/QoiEpnd4EyGGGBpFY7yIwMsf2qxpcA3pI3eO+FBGraUHjWhUA\n8SL1bA94gKh5AEjRIG+CP0bzCfrhSFpo/cK6kyH0nQMGIrSSZ5UtZjlaEBHiC5pb\nTS2azsDWreg1n5CzTA2aAGSqjwKBgQDCjx43I63MFNOiYyMqzDBC3R36wwmHdyEE\nUPyhSq83nFcYk69ywMzzCjZKbkZGuyUtm9OAMpadc7oJmUPMtUqSEHIhdLX8o+Rs\n0O8V/7MH/oqFEXp3O/sEmOcBAKpVs3c0ND6QMMFW0eNPVDwZjjTL9lzr2aCy+amz\nJvt67CHKCwKBgQCFiLswYj9Hx7Df/72STdx46SCErw0excL4mxvirTWf+/OerRoG\nyfOPbzp+t8ZOqs5h0iftHi1DQs+7S7bAQOBgnsUAZOwqKgN9Zht7XzKQS/kaP5fi\nWBKYsb5aYDKpAUVJG7WIlDLe2mvxhMLXyH32mQnGkW88SOqzf3l0ilWpdwKBgQC/\nqiIIC9wA+ltq0+MnHDRHCnGoQU835oHeMLJParWmQRwEGCl1EL5Why7osC4HLAH6\nJlJ7Llr2DbWuExCZr9cggZcNol5N3l7/W+zMbTO/omBvqsJMiAhHhSG8+RzUhJHg\nGb+waHduwiH+WmtCebdFXxQ3PBN1fUJSPQrtE4ZN9QKBgF2jT+l+7IkYiaMYle/A\nqzo9hbaVICwDlr3ajhm8xWIta063C8uw4+W/dBJMxR6y1EoFmeTugXJJrjJPJcpt\nlasys69ERn3TS6E1a1Hqa9snOYSBd7eC1RB/vx6X6NYTrCwCow80pl6SDkPCiX/3\n3YVDEKQMEZia3iXmYBArdq1w\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-hz1yf@mini-bennett-ella.iam.gserviceaccount.com",
+  "client_id": "105207786080762289274",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-hz1yf%40mini-bennett-ella.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,17 +1,24 @@
 # app/__init__.py: Flask application instance 
 
-from flask import Flask
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
+# app.py
+# Required Imports
+import os
+from flask import Flask, request, jsonify
+from firebase_admin import credentials, firestore, initialize_app
 
-# Use a service account.
-cred = credentials.Certificate('path/to/serviceAccount.json')
-
-app = firebase_admin.initialize_app(cred)
-
+# Initialize Flask App
+app = Flask(__name__)
+# Initialize Firestore DB
+cred = credentials.Certificate('key.json')
+default_app = initialize_app(cred)
 db = firestore.client()
 
-app = Flask(__name__) 
+response_time_data_ref = db.collection('response-time-data')
 
-from app import routes
+@app.route('/data', methods=['POST'])
+def upload():
+    try:
+        average = request.json['average']
+        print(average)
+    except Exception as e:
+        return f"An Error Occured: {e}"
