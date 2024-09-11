@@ -94,8 +94,21 @@ playnote("F")
 playnote("F")
 playnote("E")
 playnote("E")
-
-
+playnote("D")
+playnote("C")
+playnote("C")
+playnote("G")
+playnote("G")
+playnote("A")
+playnote("A")
+playnote("G")
+playnote("F")
+playnote("F")
+playnote("E")
+playnote("E")
+playnote("D")
+playnote("D")
+playnote("C")
 
 # Turn off the PWM
 quiet()
