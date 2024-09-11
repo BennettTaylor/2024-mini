@@ -8,7 +8,7 @@ import random
 import json
 
 
-N: int = 3
+N: int = 10
 sample_ms = 10.0
 on_ms = 500
 
@@ -51,14 +51,30 @@ def scorer(t: list[int | None]) -> None:
     print(f"You missed the light {misses} / {len(t)} times")
 
     t_good = [x for x in t if x is not None]
-
+    average = sum(t_good)/len(t)
+    minimum = min(t_good)
+    maximum = max(t_good)
+    score = (len(t)-misses)/len(t)
+    print(t)
+    print(f"average {average}")
+    print(f"minimum {minimum}")
+    print(f"maximum {maximum}")
+    print(f"score {score}")
     print(t_good)
 
     # add key, value to this dict to store the minimum, maximum, average response time
     # and score (non-misses / total flashes) i.e. the score a floating point number
     # is in range [0..1]
-    data = {}
+    data = { "average": average,
+    "minimum": minimum,
+    "maximum": maximum, 
+    "score":score}
 
+    j = json.loads(data)
+    u = '_____'
+    h = {'Content-Type':'application/json'}
+    r = requests.post(url = u,json = j,headers= h)
+    
     # %% make dynamic filename and write JSON
 
     now: tuple[int] = time.localtime()
