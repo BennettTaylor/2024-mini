@@ -71,10 +71,10 @@ def scorer(t: list[int | None]) -> None:
     "score":score}
 
     j = json.loads(data)
-    u = '_____'
+    u = 'http://127.0.0.1:5000/data'
     h = {'Content-Type':'application/json'}
     r = requests.post(url = u,json = j,headers= h)
-    
+
     # %% make dynamic filename and write JSON
 
     now: tuple[int] = time.localtime()
