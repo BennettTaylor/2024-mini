@@ -6,9 +6,16 @@ from machine import Pin
 import time
 import random
 import json
+import requests
+import network
+wlan = network.WLAN(network.STA_IF)
+if not wlan.active() or not wlan.isconnected():
+    wlan.active(True)
+    wlan.connect("BU Guest (unencrypted)", "")
+    while not wlan.isconnected():
+        pass
 
-
-N: int = 10
+N: int = 3
 sample_ms = 10.0
 on_ms = 500
 
@@ -65,15 +72,18 @@ def scorer(t: list[int | None]) -> None:
     # add key, value to this dict to store the minimum, maximum, average response time
     # and score (non-misses / total flashes) i.e. the score a floating point number
     # is in range [0..1]
-    data = { "average": average,
-    "minimum": minimum,
-    "maximum": maximum, 
-    "score":score}
+    data = {"average": average, "minimum": minimum, "maximum": maximum, "score": score}
+    # Convert the dictionary to a JSON string
+    json_string = json.dumps(data)
 
-    j = json.loads(data)
-    u = 'http://127.0.0.1:5000/data'
-    h = {'Content-Type':'application/json'}
-    r = requests.post(url = u,json = j,headers= h)
+    # Now you can load the JSON string back into a Python object (if needed)
+    j = json.loads(json_string)
+    u = 'http://10.193.249.49:5000/data'
+    if wlan.isconnected():
+        r = requests.post(u, json=j)
+        print(r)
+    else:
+        print("Not connected to wifi")
 
     # %% make dynamic filename and write JSON
 
