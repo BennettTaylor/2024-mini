@@ -7,7 +7,14 @@ Exercise 1:
 Exercise 2: 
 1. Using the code in exercise_sound.py as a starting point, modify the code to play several notes in a sequence from a song of your choosing.
 
+    Find screenshot of modified code in the results folder.
+
 Exercise 3: 
 1. Edit the exercise_game.py code to compute average, minimum, maximum response time for 10 flashes total.
+
+    Find screenshot of edited exercise_game.py in results folder.
+
 2. Upload the response time data to a cloud service of your choice.
+
+    Find video of uploading response time data to firebase in results folder.
 
